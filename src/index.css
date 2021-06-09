@@ -1,0 +1,99 @@
+table.layout, table.layout td, table.layout th {
+  border-collapse: collapse;
+  border-color: #adadad;
+  border-style: solid;
+  border-width: 1px;
+}
+
+table.layout td {
+  padding: 5px;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-right {
+  margin-right: 15px;
+}
+
+.full {
+  width: 100%;
+}
+
+.padded {
+  padding: 5px;
+}
+
+.red {
+  font-weight: bold;
+  color: red;
+}
+
+.green {
+  font-weight: bold;
+  color: green;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.menu {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  padding: 15px;
+  background-color: yellow
+}
+
+.clear {
+  clear: both;
+}
+
+.completed {
+  background-color: #ccffcc;
+}
+
+.not-completed {
+  background-color: #ffffff;
+}
+
+.spaced {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.messages {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.message {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+
+.button-link {
+  background:none;
+  color:inherit;
+  border:none;
+  padding:0!important;
+  font: inherit;
+
+  /*border is optional*/
+  border-bottom:1px solid #444;
+  cursor: pointer;
+}
+
+.italic {
+  font-style: italic;
+}
