@@ -16,8 +16,8 @@ jobs:
       - run: echo ${CIRCLE_BUILD_NUM}
       - run: echo $(pwd)
       - run: npm install -g typescript
-      - run: cd service && npm install --ignore-scripts && tsc
-      - run: cd service && docker build . -t 169533462518.dkr.ecr.us-east-2.amazonaws.com/react-list-web:1.0.${CIRCLE_BUILD_NUM}
+      - run: npm install --ignore-scripts && tsc
+      - run: docker build . -t 169533462518.dkr.ecr.us-east-2.amazonaws.com/react-list-web:1.0.${CIRCLE_BUILD_NUM}
       - run: docker image ls
       - run: aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 169533462518.dkr.ecr.us-east-2.amazonaws.com
       - run: docker image push 169533462518.dkr.ecr.us-east-2.amazonaws.com/react-list-web:1.0.${CIRCLE_BUILD_NUM}
