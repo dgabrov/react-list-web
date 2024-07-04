@@ -2,5 +2,4 @@
   "apiUrl": "/reacttodoapi",
   "checkMessageEveryMs": 3000,
   "removeMessageAfterMs": 1000
-
 }

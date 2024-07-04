@@ -1,5 +1,5 @@
 import {STATE_EDIT_LIST} from "../../store";
-import v1 from 'uuid'
+import {v4} from 'uuid'
 
 export const ACTION_EDIT_LIST = 'action-edit-list';
 
@@ -9,7 +9,7 @@ export const getActionEditList = (id, adding) => {
 
     if (adding) {
         // generate a new id
-        idValue = v1();
+        idValue = v4();
     }
 
     return {
