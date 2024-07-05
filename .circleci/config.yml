@@ -7,10 +7,14 @@ workflows:
             branches:
               only: master
 
+executors:
+  my-executor:
+    machine:
+      image: ubuntu-2204:edge
+
 jobs:
   build:
-    machine:
-      image: ubuntu-2004:202010-01
+    executor: my-executor
     steps:
       - checkout
       - run: echo ${CIRCLE_BUILD_NUM}
