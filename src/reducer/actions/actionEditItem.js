@@ -1,5 +1,5 @@
 import {STATE_EDIT_ITEM} from "../../store";
-import v1 from 'uuid'
+import {v4} from 'uuid'
 
 export const ACTION_EDIT_ITEM = 'action-edit-item';
 
@@ -9,7 +9,7 @@ export const getActionEditItem = (id, adding, listId) => {
 
     if (adding) {
         // generate a new id
-        idValue = v1();
+        idValue = v4();
     }
 
     return {

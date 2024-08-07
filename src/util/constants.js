@@ -1,6 +1,8 @@
 const settingsUrl = 'settings.json';
 const version = "2.0";
 
-export default {
+const constants = {
     settingsUrl, version
 };
+
+export default constants;
