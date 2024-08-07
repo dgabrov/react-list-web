@@ -39,7 +39,7 @@ class View extends React.Component {
                     <div className="clear"></div>
                 </div>
 
-                <table className="margin-top layout full">
+                <table className="margin-top layout full sizeable">
                     <thead>
                     <tr>
                         <th className="full padded">Item</th>
@@ -57,6 +57,9 @@ class View extends React.Component {
                     <br/>
                     <br/>
                     <button type="button" onClick={this.reset}>Reset</button>
+                    <br/>
+                    <br/>
+                    <button type="button" onClick={this.fontSize}>Font Size</button>
                 </div>
             </div>
         );
@@ -86,6 +89,14 @@ class View extends React.Component {
         let currentList = this.props.list;
 
         this.props.reset(currentList.id);
+    }
+
+    fontSize = () => {
+        const link = document.getElementById("stl")
+        if (link) {
+            const currentMedia = link.media;
+            link.media = currentMedia === 'none' ? '' : 'none';
+        }
     }
 
 }
