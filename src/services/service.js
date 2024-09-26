@@ -14,7 +14,7 @@ const processPromise = (p) => {
                         reject(err.message);
                     }
                     else {
-                        reject('generic error');
+                        reject('generic error ' + JSON.stringify(err));
                     }
                 }).catch((err) => {
                     reject(err);
