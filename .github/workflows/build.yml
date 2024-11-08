@@ -32,12 +32,3 @@ jobs:
         run: |
           docker image push 169533462518.dkr.ecr.us-east-2.amazonaws.com/react-list-web:1.0.${GITHUB_RUN_NUMBER}
           echo docker pushed successfully
-
-
-      - run: echo ${GITHUB_RUN_NUMBER}
-      - run: echo $(pwd)
-      - run: npm install -g typescript
-      - run: npm install --ignore-scripts && npm run build
-      - run: docker build . -t 169533462518.dkr.ecr.us-east-2.amazonaws.com/react-list-web:1.0.${GITHUB_RUN_NUMBER}
-      - run: docker image ls
-
